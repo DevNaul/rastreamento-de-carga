@@ -1,0 +1,56 @@
+header {
+    width: 100%;
+    background-color: #172242;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+
+    & .logo {
+      font-size: 20px;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    nav {
+        & a {
+            text-decoration: none;
+            color: whitesmoke;
+            margin: 1rem;
+            font-size: 15px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    a {
+        padding: 1px;
+        background:
+          linear-gradient(
+            to right,
+            whitesmoke,
+            whitesmoke
+          ),
+
+          linear-gradient(
+            to right,
+            #154769,
+            #2374a4,
+            #2b9ec8);
+
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
+      }
+
+      a:hover {
+        background-size: 0 3px, 100% 3px;
+      }
+}
+
+.pi-map-marker {
+    color: whitesmoke;
+    padding: 1px;
+}
